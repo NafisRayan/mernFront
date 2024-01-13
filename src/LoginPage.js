@@ -24,7 +24,7 @@ const LoginPage = ({ onLogin }) => {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', loginData);
+      const response = await axios.post('https://mernback-9dei.onrender.com/login', loginData);
       console.log(response.data);
 
       // Assuming your server sends a success message upon successful login

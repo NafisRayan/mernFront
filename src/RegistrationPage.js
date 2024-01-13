@@ -26,6 +26,9 @@ e.preventDefault();
 try{
     const response = await axios.post('https://mernback-9dei.onrender.com/register',registrationData);
     console.log(response.data);
+
+    // If registration is successful, navigate to the login page
+    history.push('/login');
 }
 catch(error){
     console.log(error)
